@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>首页 - Decision</title>
+<link rel="icon" href="data:," />
+  <script type="module" crossorigin src="../assets/home-BD5gSstH.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="../assets/home-CQPBfFb5.css">
+  <link rel="stylesheet" crossorigin href="../assets/components-r1HoO9zm.css">
+</head>
+<body data-page="home" data-prototype-page="home.html" data-react-route="/home" data-current-state="home">
+<!-- 侧边栏：默认自带 expanded 类，呈现展开状态 -->
+<div class="global-toolbar expanded" id="toolbar" data-component="app-sidebar" data-state="expanded">
+<!-- 侧边栏头部区域 -->
+<div class="tb-header">
+<a href="home.html" class="tb-logo-box" title="Decision 首页">
+<!-- 替换后的线框形态 D1 Logo 图标 -->
+<svg class="icon icon-lg" style="color:var(--primary-black);" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 18C4.686 18 2 15.314 2 12c0-3.314 2.686-6 6-6 2.5 0 4.8 1.5 5.5 3.5" />
+<path d="M16 6c3.314 0 6 2.686 6 6 0 3.314-2.686 6-6 6-2.5 0-4.8-1.5-5.5-3.5" />
+</svg>
+<span>Decision</span>
+</a>
+<!-- Manus 同款侧边栏控制器 (动态文案由JS控制) -->
+<button id="sidebar-toggle-btn" class="sidebar-toggle" onclick="toggleToolbar()" title="收起边栏" data-event="sidebar.toggle">
+<svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+</button>
+</div>
+<!-- 顶部主导航区 -->
+<div class="tb-nav">
+<!-- 1. 新建任务 (已去除了 active 类，保持非选中态) -->
+<a href="home.html" class="tb-item" data-event="task.create.open" data-route="/home">
+<svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+<span>新建任务</span>
+</a>
+<!-- 2. 知识库 -->
+<a href="knowledge.html" class="tb-item" data-event="knowledge.open" data-route="/knowledge">
+<svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+<span>知识库</span>
+</a>
+<!-- 3. 专门针对收起态的历史任务图标 -->
+<div class="tb-item collapsed-history-btn" onclick="toggleToolbar()" title="历史任务" data-event="history.open-sidebar">
+<svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+</div>
+</div>
+<!-- 历史模块区 (Manus 层级结构) -->
+<div class="history-section">
+<div class="history-header">
+<div style="display: flex; align-items: center; gap: 4px; cursor: pointer;" onclick="toggleHistoryList()" data-event="history.toggle">
+<span>历史任务</span>
+<svg id="history-arrow" class="icon icon-sm history-arrow-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</div>
+<svg class="icon icon-sm" style="cursor: pointer;" viewBox="0 0 24 24" onclick="toggleHistorySearch()" data-event="history.search.toggle"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+</div>
+<!-- 历史搜索输入框 -->
+<div class="history-search" id="history-search-box" style="display: none;">
+<svg class="icon icon-sm" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+<input type="text" name="historyKeyword" placeholder="搜索历史任务..." data-field="history.keyword">
+</div>
+<!-- 历史记录列表 -->
+<div class="history-list" id="history-list-container" data-component="history-list">
+<div class="hist-item" onclick="window.location.href='workspace.html'" data-event="history.open-workspace" data-route="/workspace">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+菲律宾仁爱礁强行运补事件推演
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+关税后续问题推演评估及应对
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+中东原油市场短期走势预测分析
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+东海防空识别区常态化巡航评估
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+半导体供应链制裁极限施压演进
+</div>
+</div>
+</div>
+<!-- 底部用户信息区 -->
+<div class="user-profile" onclick="openAccountModal()" data-event="account.open">
+<div class="avatar">A</div>
+<div class="user-name">admin</div>
+</div>
+</div>
+<!-- 右侧主内容区 -->
+<div class="wrapper" data-component="home-shell">
+<div class="ws-center" data-component="home-main">
+<div class="title">今天你想推演什么？</div>
+<div class="chat-box" data-component="simulation-entry">
+<button class="voice-btn" title="语音输入" data-event="simulation.voice.input">
+<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+</button>
+<textarea id="chatInput" name="simulationPrompt" data-api-field="description" data-field="simulation.prompt" style="padding-left: 32px;" placeholder="输入需推演的情景，例如：菲律宾仁爱礁强行运补对局势有何影响？"></textarea>
+<div class="tools">
+<div class="tool-group">
+<!-- 使用<em>替代<span>标签实现文案控制，完全避免污染原本的 CSS 样式 -->
+<span onclick="openUploadModal()" data-event="simulation.upload.open"><svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg> 附件</span>
+<span onclick="toggleNetwork(this)" data-event="simulation.network.toggle" data-field="simulation.network_enabled" data-api-field="network_enabled" data-state="disabled"><svg class="icon icon-sm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg> <em class="net-text" style="font-style: normal;">未启用联网</em></span>
+<!-- 设置信源按钮加上了 id="sourceBtn" 用于和勾选状态联动 -->
+<span id="sourceBtn" onclick="openSourceModal()" data-event="simulation.sources.open"><svg class="icon icon-sm" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg> 设置信源</span>
+<span style="cursor: not-allowed; opacity: 0.6;" data-field="simulation.mode" data-api-field="mode" data-state="standard">标准模式 <svg class="icon icon-sm" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+</div>
+<!-- 默认置灰，通过JS控制属性与状态 -->
+<button id="sendBtn" class="send-btn" disabled type="button" data-event="simulation.create">
+<svg class="icon icon-sm" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= 账号管理弹窗 ================= -->
+<div class="modal-overlay" id="accountModal" data-component="account-modal" data-state="hidden">
+<!-- 将弹窗容器设置相对定位，为了内部 Toast 的居中绝对定位 -->
+<div class="modal-content" style="position: relative;">
+<div class="modal-header">
+<h3>账号管理</h3>
+<button class="close-btn" onclick="closeAccountModal()">
+<svg class="icon icon-sm" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+</button>
+</div>
+<div class="modal-body">
+<!-- 提示信息 (样式完全复刻 config 的 toast，并且居中显示) -->
+<div id="toastMessage" class="toast-tip"></div>
+<!-- 基础态：可直接输入编辑的用户名，及点击文字修改密码 -->
+<div id="viewState">
+<div class="form-group">
+<label>用户名</label>
+<div style="position: relative;">
+<!-- 缩小 padding 预留，并添加属性阻止插件注入强制出现钥匙图标 -->
+<input type="text" id="editUsername" name="username" value="admin" autocomplete="off" data-field="account.username" data-api-field="username" data-lpignore="true" data-1p-ignore="true" spellcheck="false" oninput="handleUsernameInput()" onkeypress="handleUsernameKey(event)" style="padding-right: 48px;">
+<span id="saveUsernameBtn" class="clickable-text inline-action-btn" onclick="saveUsername()" style="display: none;">保存</span>
+</div>
+<div class="error-msg" id="usernameError"></div>
+</div>
+<div class="form-group">
+<label>密码</label>
+<div class="pwd-input" style="position: relative;">
+<!-- 密码区同步缩小 padding -->
+<input type="password" value="********" disabled style="padding-right: 72px;">
+<span class="clickable-text inline-action-btn" onclick="enterEditState()">修改密码</span>
+</div>
+</div>
+</div>
+<!-- 修改密码编辑态：已删除用户名显示 -->
+<div id="editState" style="display: none;">
+<div class="form-group">
+<label>原密码</label>
+<div class="pwd-input">
+<input type="password" id="oldPwd" name="oldPassword" data-field="account.old_password" data-api-field="old_password" placeholder="请输入原密码" oninput="markUnsaved()">
+<button type="button" onclick="togglePwd('oldPwd')" title="显示/隐藏密码">
+<svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+</button>
+</div>
+<div class="error-msg" id="oldPwdError"></div>
+</div>
+<div class="form-group">
+<label>新密码</label>
+<div class="pwd-input">
+<input type="password" id="newPwd" name="newPassword" data-field="account.new_password" data-api-field="new_password" placeholder="请输入新密码" oninput="markUnsaved()">
+<button type="button" onclick="togglePwd('newPwd')" title="显示/隐藏密码">
+<svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+</button>
+</div>
+<div class="error-msg" id="newPwdError"></div>
+</div>
+<div class="form-group">
+<label>确认新密码</label>
+<div class="pwd-input">
+<input type="password" id="confirmPwd" name="confirmPassword" data-field="account.confirm_password" data-api-field="confirm_password" placeholder="请再次输入新密码" oninput="markUnsaved()">
+<button type="button" onclick="togglePwd('confirmPwd')" title="显示/隐藏密码">
+<svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+</button>
+</div>
+<div class="error-msg" id="confirmPwdError"></div>
+</div>
+<div class="modal-footer">
+<button class="default-btn" onclick="cancelEdit()">取消</button>
+<button class="primary-btn" onclick="savePwdInfo()">保存</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= 二次确认弹窗 ================= -->
+<div class="modal-overlay" id="confirmModal" data-component="unsaved-confirm-modal" data-state="hidden" style="z-index: 1002;">
+<div class="modal-content" style="width: 300px;">
+<div class="modal-header">
+<h3>提示</h3>
+</div>
+<div class="modal-body">
+<p style="font-size: 14px; color: #1E293B;">有未保存的修改，确认要关闭吗？</p>
+<div class="modal-footer" style="margin-top: 24px;">
+<button class="default-btn" onclick="closeConfirmModal()">取消</button>
+<button class="primary-btn" onclick="forceCloseAccountModal()">确认关闭</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= 附件上传弹窗 ================= -->
+<div class="modal-overlay" id="uploadModal" data-component="upload-modal" data-state="hidden">
+<div class="modal-content" style="width: 420px;">
+<div class="modal-header">
+<h3>上传文件</h3>
+<button class="close-btn" onclick="closeUploadModal()">
+<svg class="icon icon-sm" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+</button>
+</div>
+<div class="modal-body" style="padding: 24px 20px;">
+<div class="upload-area">
+<svg class="icon icon-lg" style="margin-bottom: 8px;" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+<div style="font-size: 14px; font-weight: 500; color: #1E293B;">点击或将文件拖拽到这里上传</div>
+<div style="font-size: 12px; margin-top: 6px; opacity: 0.7;">支持 PDF, DOCX, TXT, XLSX, PPT, Markdown (最大 50MB)</div>
+</div>
+</div>
+<div class="modal-footer" style="padding: 16px 20px; border-top: 1px solid #E2E8F0; background: #F8FAFC; margin-top: 0;">
+<button class="default-btn" onclick="closeUploadModal()">取消</button>
+<button class="primary-btn" onclick="closeUploadModal()">确认上传</button>
+</div>
+</div>
+</div>
+<!-- ================= 设置信源弹窗 ================= -->
+<div class="modal-overlay" id="sourceModal" data-component="source-modal" data-state="hidden">
+<div class="modal-content" style="width: 500px; max-height: 80vh;">
+<div class="modal-header">
+<h3>设置信源</h3>
+<button class="close-btn" onclick="closeSourceModal()">
+<svg class="icon icon-sm" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+</button>
+</div>
+<div class="modal-body" style="overflow-y: auto; padding: 20px; background: #F8FAFC;">
+<!-- 系统知识库列表截取自knowledge -->
+<div class="source-folder">
+<div class="source-folder-header">
+<input type="checkbox" id="sf1" onchange="toggleFolderDocs(this)">
+<label for="sf1" style="flex:1; cursor:pointer;">南海历史与领土争议</label>
+<span class="folder-tag tag-general">通用</span>
+</div>
+<div class="source-doc-list">
+<label class="source-doc-item"><input type="checkbox" onchange="updateFolderState(this)"> <span>1 南海问题的政策及国际法制度的演进.pdf</span></label>
+<label class="source-doc-item"><input type="checkbox" onchange="updateFolderState(this)"> <span>2 南海争端与国际法律机制的适用.pdf</span></label>
+</div>
+</div>
+<div class="source-folder">
+<div class="source-folder-header">
+<input type="checkbox" id="sf2" onchange="toggleFolderDocs(this)">
+<label for="sf2" style="flex:1; cursor:pointer;">国际法与南海争议解决机制</label>
+<span class="folder-tag tag-law">法律</span>
+</div>
+<div class="source-doc-list">
+<label class="source-doc-item"><input type="checkbox" onchange="updateFolderState(this)"> <span>1 南海问题的国际法解决路径.pdf</span></label>
+<label class="source-doc-item"><input type="checkbox" onchange="updateFolderState(this)"> <span>2 国际法与南海争端的和平解决.pdf</span></label>
+</div>
+</div>
+<div class="source-folder">
+<div class="source-folder-header">
+<input type="checkbox" id="sf3" onchange="toggleFolderDocs(this)">
+<label for="sf3" style="flex:1; cursor:pointer;">菲律宾政治体系</label>
+<span class="folder-tag tag-politics">政治</span>
+</div>
+<div class="source-doc-list">
+<label class="source-doc-item"><input type="checkbox" onchange="updateFolderState(this)"> <span>1 菲律宾政治体系概述.pdf</span></label>
+<label class="source-doc-item"><input type="checkbox" onchange="updateFolderState(this)"> <span>2 菲律宾政党政治生态塑造.pdf</span></label>
+</div>
+</div>
+</div>
+<div class="modal-footer" style="padding: 16px 20px; border-top: 1px solid #E2E8F0; background: #FFFFFF; margin-top: 0;">
+<button class="primary-btn" onclick="closeSourceModal()">确认</button>
+</div>
+</div>
+</div>
+</body>
+</html>

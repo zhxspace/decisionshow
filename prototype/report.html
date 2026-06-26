@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>推演报告 - Decision</title>
+<link rel="icon" href="data:," />
+  <script type="module" crossorigin src="../assets/report-BNbcn2IQ.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="../assets/report-D6ZVzdEO.css">
+  <link rel="stylesheet" crossorigin href="../assets/components-r1HoO9zm.css">
+</head>
+<body data-page="report" data-prototype-page="report.html" data-react-route="/report" data-current-state="final-report">
+<!-- 工具栏默认收起 -->
+<div class="global-toolbar" id="toolbar" data-component="app-sidebar" data-state="collapsed">
+<div class="tb-header">
+<a href="home.html" class="tb-logo-box" title="Decision 首页">
+<svg class="icon icon-lg" style="color:var(--primary-black);" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 18C4.686 18 2 15.314 2 12c0-3.314 2.686-6 6-6 2.5 0 4.8 1.5 5.5 3.5" />
+<path d="M16 6c3.314 0 6 2.686 6 6 0 3.314-2.686 6-6 6-2.5 0-4.8-1.5-5.5-3.5" />
+</svg>
+<span>Decision</span>
+</a>
+<button id="sidebar-toggle-btn" class="sidebar-toggle" onclick="toggleToolbar()" title="展开边栏" data-event="sidebar.toggle">
+<svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+</button>
+</div>
+<div class="tb-nav">
+<a href="home.html" class="tb-item" data-event="task.create.open" data-route="/home">
+<svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+<span>新建任务</span>
+</a>
+<a href="knowledge.html" class="tb-item" data-event="knowledge.open" data-route="/knowledge">
+<svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+<span>知识库</span>
+</a>
+<div class="tb-item collapsed-history-btn" onclick="toggleToolbar()" title="历史任务" data-event="history.open-sidebar">
+<svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+</div>
+</div>
+<div class="history-section">
+<div class="history-header">
+<div style="display: flex; align-items: center; gap: 4px; cursor: pointer;" onclick="toggleHistoryList()" data-event="history.toggle">
+<span>历史任务</span>
+<svg id="history-arrow" class="icon icon-sm history-arrow-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</div>
+<svg class="icon icon-sm" style="cursor: pointer;" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+</div>
+<div class="history-list" id="history-list-container">
+<div class="hist-item" onclick="window.location.href='workspace.html'" data-event="history.open-workspace" data-route="/workspace">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+菲律宾仁爱礁强行运补事件推演
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+关税后续问题推演评估及应对
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+中东原油市场短期走势预测分析
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+东海防空识别区常态化巡航评估
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+半导体供应链制裁极限施压演进
+</div>
+</div>
+</div>
+<!-- 新增：侧边栏底部用户信息 -->
+<div class="tb-footer-line"></div>
+<div class="tb-footer" title="用户账户">
+<div class="tb-footer-avatar">A</div>
+<span class="tb-footer-text">admin</span>
+</div>
+</div>
+<div class="wrapper" data-component="report-shell">
+<div class="header">
+<div style="display: flex; align-items: center; gap: 8px;">
+<svg class="icon icon-lg" style="color:var(--primary-blue);" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+<span style="color: #000000;"><b>菲律宾仁爱礁强行运补事件多分支推演报告</b></span>
+</div>
+<div style="display: flex; align-items: center;">
+<button class="btn-outline" onclick="window.location.href='home.html'" data-event="report.return.home" data-route="/home" style="margin-left:12px; padding: 0 16px; height: 32px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px;">
+返回首页
+</button>
+<button class="btn-outline" data-event="report.share" style="margin-left:8px; padding: 0 16px; height: 32px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px;">
+<svg class="icon icon-sm" style="margin-right: 6px;" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+分享
+</button>
+<button class="btn" data-event="report.export.download" style="margin-left:8px; padding: 0 16px; height: 32px; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; background:#1E293B; color:#fff; border: 1px solid #1E293B; border-radius:8px; cursor: pointer; transition: 0.2s;">
+<svg class="icon icon-sm" style="margin-right: 6px;" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+下载报告
+</button>
+</div>
+</div>
+<div class="rep-body" data-component="report-workspace">
+<div class="doc-area" id="report-doc-area" data-component="report-document-area">
+<!-- 优化：设置 contenteditable 使得点击即出现光标 -->
+<div class="doc-container" contenteditable="true" data-component="editable-report-document" data-report-key="philippines-renai-final-report" style="outline: none;">
+
+<!-- 一、核心问题回答 (所有文字纯黑) -->
+<div class="doc-h1" data-component="report-core-answer" data-section="core-answer">
+一、核心问题回答
+</div>
+<div class="q-title">问题1：菲律宾强行运补对南海局势产生的影响</div>
+<div class="doc-p" style="color:#000000; margin-bottom:8px;">这一行为在任何情景下都会直接推高地区军事紧张水平，并引发菲律宾国内的民族主义与舆情反应。</div>
+<ul class="q-list">
+  <li>在现场，它意味着中菲海上执法力量进入更近距离接触，摩擦的烈度和频率都会显著上升，从而被国内舆论塑造成“主权捍卫”的象征。</li>
+  <li>在国际场域，菲律宾会借此时机发动外交抗议与多边动员，争取美国和部分盟友的公开支持，扩大事件影响。</li>
+</ul>
+
+<div class="q-title">问题2：如果美军驱逐舰进入南海会有什么影响</div>
+<ul class="q-list" style="margin-bottom:12px;">
+  <li>军事层面：美国海军的出现意味着冲突风险加码，中方的海上力量将被迫做出针对性部署，中美直接对峙概率上升，活动空间更拥挤。</li>
+  <li>外交层面：局势将被推到大国博弈的高度，东盟国家面临选边压力，区域对抗性加剧。</li>
+</ul>
+<div class="doc-p" style="color:#000000; margin-bottom: 32px;">这一介入显著降低了降温的可能性，即便后续出现外交接触契机，由于紧张状态已被“固化”，政策灵活度大幅下降。</div>
+
+<!-- 二、态势演化复盘 -->
+<div class="doc-h1" data-component="situation-review" data-section="situation-review">
+二、态势演化复盘
+</div>
+<div class="timeline-wrapper">
+  <!-- 分支A -->
+  <div class="tl-branch">
+    <div class="tl-branch-title">分支A (有美舰介入)</div>
+    <div class="tl-nodes">
+      <div class="tl-node">局势骤然升温，军事与<br>外交双高，舆论迅速硬化</div>
+      <div class="tl-node">紧张度冲到顶点，舆论进入“中美<br>对抗”框架，反华情绪稳定在极高值。</div>
+      <div class="tl-node">降温速度极慢，高压<br>状态延续。</div>
+    </div>
+    <div class="tl-axis">
+      <div class="tl-line"></div>
+      <div class="tl-step">round 1<span>运补事件</span></div>
+      <div class="tl-step">round 2<span>美舰入场</span></div>
+      <div class="tl-step">round 3<span>无新事件</span></div>
+    </div>
+  </div>
+  
+  <!-- 分支B -->
+  <div class="tl-branch">
+    <div class="tl-branch-title">分支B (无外部事件，自然演化)</div>
+    <div class="tl-nodes">
+      <div class="tl-node">局势上升，<br>但仍位于可控区</div>
+      <div class="tl-node">无强力外部介入，紧张度和外交<br>压力自然回落，舆论热度下降，<br>反华情绪温和降低。</div>
+      <div class="tl-node">继续缓和，出现外交<br>接触意向。</div>
+    </div>
+    <div class="tl-axis">
+      <div class="tl-line"></div>
+      <div class="tl-step">round 1<span>运补事件</span></div>
+      <div class="tl-step">round 2<span>延续</span></div>
+      <div class="tl-step">round 3<span></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 洞察文本 -->
+<div class="insight-section-title">对比发现</div>
+<div class="insight-item">
+  <span class="insight-item-title">外部介入是紧张状态固化的决定性因素</span>
+  <span class="insight-item-desc">有美舰介入的情景里，局势和舆论几乎锁死在高位，降温极难；无美舰介入时，局势有较强自我修复能力。</span>
+</div>
+<div class="insight-item">
+  <span class="insight-item-title">触发事件的叙事走向在第一轮基本定型</span>
+  <span class="insight-item-desc">第一轮对事件的定性将左右后续舆论方向和公众情绪走势。</span>
+</div>
+<div class="insight-item">
+  <span class="insight-item-title">外交回旋空间与外部介入成反比</span>
+  <span class="insight-item-desc">外部大国的军事参与迫使东盟等区域国家选边站，削弱调解作用。</span>
+</div>
+
+<div class="insight-section-title">战略洞察</div>
+<div class="insight-item">
+  <span class="insight-item-title">分支预案化</span>
+  <span class="insight-item-desc">在面对类似事件时，应当事先区分“外力介入”与“无外力介入”两种路线，匹配不同的应对模板。</span>
+</div>
+<div class="insight-item">
+  <span class="insight-item-title">抓住自然降温窗口</span>
+  <span class="insight-item-desc">如果无外部介入，应迅速释放外交善意和降温动作，加快恢复多边对话。</span>
+</div>
+<div class="insight-item">
+  <span class="insight-item-title">稳控高压期的风险</span>
+  <span class="insight-item-desc">若外力介入已成事实，应将重心切换到风险管理与防扩散，避免战术意外演变成战略危机。</span>
+</div>
+<div class="insight-item">
+  <span class="insight-item-title">舆论战的时间敏感性</span>
+  <span class="insight-item-desc">舆情叙事在初期的塑造几乎决定长期话语格局，需在事件发生后的黄金24小时内投入资源应对。</span>
+</div>
+<div class="insight-summary">
+  这两条推演路径清楚表明——“外部军力介入”与否，是南海摩擦局势能否自然降温的临界变量。中国需要在战略层面设计双轨方案：一条应对无外力介入的自然演化场景（以外交与东盟合作为主），另一条应对外力介入导致的高压固化场景（以危机管理与舆论对冲为主），这样才能在局势突变时保持主动权。
+</div>
+
+<!-- 三、事件链深度剖析 -->
+<div class="doc-h1" data-component="event-chain-analysis" data-section="event-chain-analysis">
+三、事件链深度剖析
+</div>
+<ul class="q-list">
+  <li><b>触发点：</b>菲运补事件是导火索，引发现场对抗 -> 舆论放大 -> 政策硬化。</li>
+  <li><b>加速器：</b>美国军舰介入会成为态势固化的催化剂，中美直接对立的框架形成后，地区其他方被动卷入。</li>
+  <li><b>缓冲机制：</b>在没有外部硬实力介入的情景下，局势会通过外交接触、媒体注意力转移等方式逐渐自我降温。</li>
+  <li><b>长期效应：</b>舆论叙事一旦形成定式（如“中国霸凌”），在没有有力反叙事和外交突破的情况下，会持续影响政策，即便实地摩擦减少，政策依旧偏硬。</li>
+</ul>
+
+<!-- 四、关键风险点清单 -->
+<div class="doc-h1" data-component="risk-list" data-section="risk-list">
+四、关键风险点清单
+</div>
+<div class="risk-grid">
+  <div class="risk-card">
+    <div class="risk-card-header">擦枪走火风险</div>
+    <div class="risk-card-body">多方舰机近距离机动，在无沟通或沟通延迟情况下可能发生意外冲突。</div>
+  </div>
+  <div class="risk-card">
+    <div class="risk-card-header">对抗固化风险</div>
+    <div class="risk-card-body">外部大国军事存在把短期摩擦变成长期高压状态，降低外交腾挪空间。</div>
+  </div>
+  <div class="risk-card">
+    <div class="risk-card-header">多边平台功能削弱</div>
+    <div class="risk-card-body">东盟被迫选边，失去中立调解功能。</div>
+  </div>
+  <div class="risk-card">
+    <div class="risk-card-header">舆论绑架风险</div>
+    <div class="risk-card-body">国内民族主义情绪长期高位，限制政策调整余地。</div>
+  </div>
+</div>
+
+<!-- 五、策略优化建议 -->
+<div class="doc-h1" data-component="strategy-recommendations" data-section="strategy-recommendations">
+五、策略优化建议
+</div>
+<table class="strategy-table">
+  <tbody>
+    <tr>
+      <td>东盟分化与稳固双边渠道</td>
+      <td>主动接触中立和友好国家，减少菲律宾的外交动员成功率。</td>
+    </tr>
+    <tr>
+      <td>建立风险防控机制</td>
+      <td>确保对美、对菲有直接军事联络渠道，在高压期防止战术层面的意外冲突。</td>
+    </tr>
+    <tr>
+      <td>舆论主动态势塑造</td>
+      <td>布局国际叙事，削弱“霸凌者”标签，通过透明信息和法律依据塑造克制形象。</td>
+    </tr>
+    <tr>
+      <td>现场执法标准化</td>
+      <td>制定可预期的现场应对规则，既保证主权，又避免因一线即兴动作而引发升级。</td>
+    </tr>
+    <tr>
+      <td>渐进性姿态管理</td>
+      <td>根据局势阶段，适度释放降温动作（如放行非敏感民用补给），营造谈判窗口。</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+<!-- 鼠标悬停时展示的段落操作柄 -->
+<div id="para-handle" class="para-handle" data-component="paragraph-action-handle">
+    <span style="color:var(--primary-blue)">T</span> ⋮⋮
+</div>
+
+<!-- 点击操作柄弹出的下拉菜单 (仿 AI改写工具栏2.jpg) -->
+<div id="para-dropdown" class="para-dropdown" data-component="paragraph-action-menu">
+    <div class="pd-item ai-rewrite-btn" data-event="report.ai-rewrite.open" style="color: var(--primary-blue); font-weight: 500;">
+        <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; color: var(--primary-blue); margin-right: 6px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> AI 改写
+    </div>
+    <div class="pd-divider"></div>
+    <!-- 第二行：T | H1 | H2 | H3 | H4 | 列表 -->
+    <div class="pd-row">
+        <div class="pd-icon-btn" style="color: var(--primary-blue); background: #E8F0FE;">T</div>
+        <div class="pd-icon-btn">H1</div>
+        <div class="pd-icon-btn">H2</div>
+        <div class="pd-icon-btn">H3</div>
+        <div class="pd-icon-btn">H4</div>
+        <div class="pd-icon-btn"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></div>
+    </div>
+    <!-- 第三行：优化 123有序列表、双引号、高亮图标 -->
+    <div class="pd-row">
+        <!-- 明确的 1 2 3 序号列表图标 -->
+        <div class="pd-icon-btn" title="有序列表">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="6" x2="21" y2="6"></line>
+                <line x1="12" y1="12" x2="21" y2="12"></line>
+                <line x1="12" y1="18" x2="21" y2="18"></line>
+                <text x="3" y="9" font-size="7" fill="currentColor" stroke="none" font-family="sans-serif">1</text>
+                <text x="3" y="15" font-size="7" fill="currentColor" stroke="none" font-family="sans-serif">2</text>
+                <text x="3" y="21" font-size="7" fill="currentColor" stroke="none" font-family="sans-serif">3</text>
+            </svg>
+        </div>
+        <div class="pd-icon-btn"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></div>
+        <div class="pd-icon-btn"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+        <!-- 明确的双引号引用图标 -->
+        <div class="pd-icon-btn" title="引用">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+            </svg>
+        </div>
+        <!-- 明确的“A”高亮图标 -->
+        <div class="pd-icon-btn" title="高亮">
+            <span style="background: #FEF08A; padding: 0 4px; border-radius: 2px; font-weight: bold; font-family: serif; font-size: 13px; line-height: 16px; display: inline-block; color: #1E293B;">A</span>
+        </div>
+        <div class="pd-icon-btn" style="visibility:hidden;"></div>
+    </div>
+    <div class="pd-divider"></div>
+    <div class="pd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg> <span style="flex:1;">缩进和对齐</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+    <div class="pd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg> <span style="flex:1;">颜色</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+    <div class="pd-divider"></div>
+    <div class="pd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> 评论</div>
+    <div class="pd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg> 剪切</div>
+    <div class="pd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> 复制</div>
+    <div class="pd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg> 删除</div>
+    <div class="pd-divider"></div>
+    <div class="pd-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg> <span style="flex:1;">在下方添加</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></div>
+</div>
+
+<!-- 文档内悬浮：选中后的横向编辑工具栏 -->
+<div id="floating-toolbar" class="floating-toolbar" data-component="text-selection-toolbar">
+    <div class="ft-btn ai-rewrite-btn" data-event="report.ai-rewrite.open" style="color: var(--primary-blue); font-weight: 500;">
+        <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; color: var(--primary-blue); margin-right: 4px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> AI 改写
+    </div>
+    <div class="ft-divider"></div>
+    <div class="ft-btn ft-text-icon">T <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:14px;height:14px;margin-left:2px;"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+    <div class="ft-divider"></div>
+    <div class="ft-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="15" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:14px;height:14px;margin-left:2px;"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+    <div class="ft-divider"></div>
+    
+    <div class="ft-btn ft-text-icon" style="font-weight: bold;">B</div>
+    <div class="ft-btn ft-text-icon" style="text-decoration: line-through;">S</div>
+    <div class="ft-btn ft-text-icon" style="font-style: italic;">I</div>
+    <div class="ft-btn ft-text-icon" style="text-decoration: underline;">U</div>
+    <!-- 优化：将超链接🔗图标调小 -->
+    <div class="ft-btn ft-text-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width: 14px; height: 14px;">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+        </svg>
+    </div>
+    
+    <div class="ft-btn ft-text-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+    <div class="ft-btn"><span style="background: #FEF08A; padding: 0 4px; border-radius: 2px;">A</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:14px;height:14px;margin-left:2px;"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
+    <div class="ft-divider"></div>
+    <div class="ft-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> <span style="margin-left:2px;">复制</span></div>
+    <div class="ft-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></div>
+</div>
+
+<!-- AI改写弹窗悬浮框 -->
+<div id="ai-rewrite-popup" data-component="ai-rewrite-popup" data-state="hidden" style="display:none; position:absolute; z-index:1200; background:#FFFFFF; border:1px solid #E2E8F0; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.08); width: 400px; padding:12px;">
+    <div style="position:relative; display:flex; align-items:center;">
+        <input type="text" id="ai-rewrite-input" name="rewriteInstruction" data-field="report.rewrite_instruction" data-api-field="instruction" placeholder="说说你想怎么改写" style="flex:1; border:none; outline:none; font-size:14px; padding:8px 48px 8px 12px; background:#F8FAFC; border-radius:8px; color:#1E293B;" oninput="checkRewriteInput()">
+        <button class="send-btn-circle" id="rewrite-send-btn" title="发送指令" data-event="report.rewrite.send" style="position: absolute; right: 4px; top: 50%; transform: translateY(-50%); width: 28px; height: 28px;">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+    </div>
+</div>
+
+</div>
+
+<!-- 右侧 AI 搜索与辅助问答 (带拖拽缩放控制条) -->
+<div class="ai-area" id="ai-area" data-component="report-ai-assistant" data-state="expanded">
+<div class="ai-resizer" id="ai-resizer" data-component="report-ai-resizer"></div>
+<div class="ai-header">
+<svg class="icon" style="color:var(--primary-blue);" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+AI报告助手
+</div>
+<div class="chat-history" data-component="report-ai-chat-history">
+<div class="msg sys">
+  <span style="color:#000000; font-weight:bold; display:block; margin-bottom:8px;">您好，我是AI写作助手</span>
+  可以随时为您解答写作中遇到的问题，有什么可以帮助您的吗？
+</div>
+<!-- 同步了 config.docx 的用户气泡样式 -->
+<div class="msg user">菲律宾进行强行运补的动机是什么？</div>
+
+<!-- AI回复区域，内联样式调整实现排版紧凑化 -->
+<div class="msg sys" style="line-height: 1.4;">
+  <div style="color:var(--primary-blue); font-weight:bold; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+    <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    AI 已完成分析
+  </div>
+  <div style="margin-bottom:6px;">菲律宾进行强行运补的动机可以从多个角度分析：</div>
+  <ol style="padding-left: 16px; margin-bottom: 8px; display: flex; flex-direction: column; gap: 4px;">
+    <li><b>国内政治压力：</b>菲律宾马科斯政府面临国内政治和经济困境，支持率下滑，贫困率上升。通过南海挑衅转移国内矛盾焦点，成为其维持政治支持的手段之一。</li>
+    <li><b>外部支持幻想：</b>菲律宾依赖美国的“安全承诺”，试图通过引入外部力量（如美国）来增强其在南海问题上的立场，尽管这种支持的实际效果存疑。</li>
+    <li><b>资源争夺：</b>南海地区蕴藏丰富的石油和天然气资源，菲律宾试图通过非法占据仁爱礁等岛礁，获取资源开采权。</li>
+    <li><b>战略误判：</b>菲律宾误判了国际形势，认为通过挑衅可以迫使中国在南海问题上做出让步，同时借助媒体炒作塑造“受害者”形象，获取国际同情。</li>
+    <li><b>长期非法存在：</b>菲律宾自1999年将“马德雷山”号军舰非法坐滩仁爱礁以来，一直试图通过补给和加固船体，将其非法存在永久化。</li>
+  </ol>
+  <div>这些动机综合作用，导致菲律宾在南海问题上采取了一系列挑衅行动，尽管这些行动在法理和实力上都难以得逞。</div>
+  
+  <div class="msg-actions">
+    <div class="msg-action-btn" title="复制">
+      <svg class="icon icon-sm" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+    </div>
+    <div class="msg-action-btn" title="重新生成">
+      <svg class="icon icon-sm" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+    </div>
+  </div>
+</div>
+</div>
+<!-- 底栏带上方的“选中交互栏” -->
+<div class="chat-input-container" data-component="report-ai-composer">
+    <div id="ai-selection-bar" class="ai-selection-bar" data-component="selected-text-context" data-state="hidden">
+        <div class="ai-selection-bar-text" id="ai-selection-text"></div>
+        <svg class="icon icon-sm" style="cursor: pointer; flex-shrink: 0; margin-left: 8px;" onclick="cancelSelection()" data-event="report.selection.clear" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </div>
+    <div class="chat-input" style="border-top: none;">
+        <button class="voice-btn" title="语音输入" data-event="report.voice.input">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+        </button>
+        <input type="text" id="chat-nl-input" name="reportInstruction" data-field="report.instruction" data-api-field="instruction" placeholder="选中内容可对指定内容改写" oninput="checkChatInput()">
+        <button class="send-btn-circle" id="chat-send-btn" title="发送指令" data-event="report.instruction.send" style="position: absolute; right: 24px; top: 50%; transform: translateY(-50%);">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+    </div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

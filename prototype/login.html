@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>登录 - Decision</title>
+<link rel="icon" href="data:," />
+  <script type="module" crossorigin src="../assets/login-BFQ-ybl0.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="../assets/login-CX4ebBFH.css">
+  <link rel="stylesheet" crossorigin href="../assets/components-r1HoO9zm.css">
+</head>
+<body data-page="login" data-prototype-page="login.html" data-react-route="/login" data-current-state="login">
+<div class="login-box" data-component="auth-shell">
+<div class="logo" data-component="brand-mark">
+<svg class="icon" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M8 18C4.686 18 2 15.314 2 12c0-3.314 2.686-6 6-6 2.5 0 4.8 1.5 5.5 3.5" />
+<path d="M16 6c3.314 0 6 2.686 6 6 0 3.314-2.686 6-6 6-2.5 0-4.8-1.5-5.5-3.5" />
+</svg>
+Decision
+</div>
+<div class="subtitle">通用决策推演平台</div>
+<form id="login-view" class="view-section active" data-component="login-form" data-state="login" autocomplete="off">
+<div class="input-group">
+<div class="nl-input">
+<input type="text" id="login-account" name="username" data-field="login.username" data-api-field="username" placeholder="请输入用户名" value="admin" autocomplete="off">
+</div>
+<div class="error-msg" id="login-account-err"></div>
+</div>
+<div class="input-group">
+<div class="nl-input">
+<input type="password" id="login-password" name="password" data-field="login.password" data-api-field="password" placeholder="请输入密码" value="000000" autocomplete="new-password">
+</div>
+<div class="error-msg" id="login-password-err"></div>
+</div>
+<div class="global-error" id="login-global-err"></div>
+<button class="btn" id="login-btn" type="button" data-event="auth.login.submit">登 录</button>
+<div class="register-area">
+还没有账号？ <a href="javascript:void(0)" data-event="auth.view.register" onclick="switchView('register')">立即注册</a>
+</div>
+</form>
+<form id="register-view" class="view-section" data-component="register-form" data-state="register" autocomplete="off">
+<div class="input-group">
+<div class="nl-input">
+<input type="text" id="reg-account" name="username" data-field="register.username" data-api-field="username" placeholder="请输入用户名" autocomplete="off">
+</div>
+<div class="error-msg" id="reg-account-err"></div>
+</div>
+<div class="input-group">
+<div class="nl-input">
+<input type="password" id="reg-password" name="password" data-field="register.password" data-api-field="password" placeholder="请输入密码" autocomplete="new-password">
+</div>
+<div class="error-msg" id="reg-password-err"></div>
+</div>
+<div class="input-group">
+<div class="nl-input">
+<input type="password" id="reg-confirm" name="passwordConfirm" data-field="register.passwordConfirm" data-api-field="password_confirm" placeholder="请再次输入密码" autocomplete="new-password">
+</div>
+<div class="error-msg" id="reg-confirm-err"></div>
+</div>
+<div class="global-error" id="reg-global-err"></div>
+<button class="btn" id="reg-btn" type="button" data-event="auth.register.submit" disabled>注 册</button>
+<div class="register-area">
+已有账号？ <a href="javascript:void(0)" data-event="auth.view.login" onclick="switchView('login')">返回登录</a>
+</div>
+</form>
+</div>
+<div class="modal-overlay" id="successModal" data-component="registration-success-modal" data-state="hidden">
+<div class="modal-content success-modal">
+<div class="modal-body">
+<svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+<polyline points="22 4 12 14.01 9 11.01"></polyline>
+</svg>
+<div class="success-text">注册成功</div>
+<div class="success-subtext">请前往登录使用系统</div>
+</div>
+<div class="modal-footer">
+<button class="primary-btn" data-event="auth.register.success.confirm" onclick="closeSuccessModal()">前往登录</button>
+</div>
+</div>
+</div>
+</body>
+</html>

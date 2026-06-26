@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>任务配置 - 知识调研 - Decision</title>
+<link rel="icon" href="data:," />
+  <script type="module" crossorigin src="../assets/research-DNIuBjHb.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="../assets/research-C5VOpGi3.css">
+  <link rel="stylesheet" crossorigin href="../assets/components-r1HoO9zm.css">
+</head>
+<body data-page="research" data-prototype-page="research.html" data-react-route="/research" data-current-state="research">
+<!-- 左侧工具栏默认收起 -->
+<div class="global-toolbar" id="toolbar" data-component="app-sidebar" data-state="collapsed">
+<div class="tb-header">
+<a href="home.html" class="tb-logo-box" title="Decision 首页">
+<svg class="icon icon-lg" style="color:var(--primary-black);" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 18C4.686 18 2 15.314 2 12c0-3.314 2.686-6 6-6 2.5 0 4.8 1.5 5.5 3.5" /><path d="M16 6c3.314 0 6 2.686 6 6 0 3.314-2.686 6-6 6-2.5 0-4.8-1.5-5.5-3.5" /></svg>
+<span>Decision</span>
+</a>
+<button id="sidebar-toggle-btn" class="sidebar-toggle" onclick="toggleToolbar()" title="展开边栏" data-event="sidebar.toggle">
+<svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+</button>
+</div>
+<div class="tb-nav">
+<a href="home.html" class="tb-item" data-event="task.create.open" data-route="/home">
+<svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+<span>新建任务</span>
+</a>
+<a href="knowledge.html" class="tb-item" data-event="knowledge.open" data-route="/knowledge">
+<svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+<span>知识库</span>
+</a>
+<div class="tb-item collapsed-history-btn" onclick="toggleToolbar()" title="历史任务" data-event="history.open-sidebar">
+<svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+</div>
+</div>
+<div class="history-section">
+<div class="history-header">
+<div style="display: flex; align-items: center; gap: 4px; cursor: pointer;" onclick="toggleHistoryList()" data-event="history.toggle">
+<span>历史任务</span>
+<svg id="history-arrow" class="icon icon-sm history-arrow-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</div>
+<svg class="icon icon-sm" style="cursor: pointer;" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+</div>
+<div class="history-list" id="history-list-container">
+<div class="hist-item" onclick="window.location.href='workspace.html'" data-event="history.open-workspace" data-route="/workspace">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+菲律宾仁爱礁强行运补事件推演
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+关税后续问题推演评估及应对
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+中东原油市场短期走势预测分析
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+东海防空识别区常态化巡航评估
+</div>
+<div class="hist-item">
+<svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+半导体供应链制裁极限施压演进
+</div>
+</div>
+</div>
+
+<!-- 底部用户信息区 -->
+<div class="user-profile">
+<div class="avatar">A</div>
+<div class="user-name">admin</div>
+</div>
+</div>
+
+<div class="wrapper" data-component="research-shell">
+<div class="header">
+<div><b>当前任务：</b>菲律宾仁爱礁强行运补事件推演</div>
+<div>模式：标准模式</div>
+</div>
+<div class="ws-body" data-component="research-workspace">
+<!-- 呼出左侧边栏的悬浮按钮 -->
+<button class="expand-tab-left panel-btn" onclick="toggleLeftSidebar()" title="展开任务面板" data-event="research.sidebar.expand">
+<svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+</button>
+<!-- 左侧任务导航面板 -->
+<div class="ws-left" id="ws-left" data-component="task-progress-sidebar" data-state="expanded">
+<!-- 模块一：任务导航 -->
+<div class="panel-section" style="flex:1; overflow-y:auto; border-bottom: 1px solid #E2E8F0;">
+<div class="panel-title">
+<span class="panel-title-text"><svg class="icon" viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg> 任务导航</span>
+<button class="panel-btn" onclick="toggleLeftSidebar()" title="收起面板" data-event="research.sidebar.collapse">
+<svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+</button>
+</div>
+<div class="tree-node" onclick="window.location.href='config.html'" style="color:#1E293B; font-weight: 500; display: flex; align-items: center; gap: 6px;" data-state="complete" data-step="template" data-event="research.step.config" data-route="/config">
+模板配置
+</div>
+<div class="tree-node active" style="font-weight: bold; color: var(--primary-blue); display: flex; align-items: center; gap: 6px;" data-state="active" data-step="research">
+知识调研
+</div>
+<div class="tree-node disabled" style="display: flex; align-items: center; gap: 6px;" data-state="disabled" data-step="simulation">
+任务推演
+</div>
+<div class="tree-node disabled" style="display: flex; align-items: center; gap: 6px;" data-state="disabled" data-step="complete">
+完成
+</div>
+</div>
+<!-- 模块二：知识库模块 -->
+<div class="panel-section" style="border-bottom: none; padding-bottom: 24px;">
+<div class="panel-title">
+<span class="panel-title-text"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg> 知识库</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px; margin-top: 8px;">
+<div class="kb-item" style="color: #475569;" title="查看文档" data-component="knowledge-source" data-api-field="source_document">
+<svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+<span style="font-size: 13px; color: #475569;">南海历史争端.pdf</span>
+</div>
+</div>
+</div>
+</div>
+<div class="resizer" id="dragLeft" data-component="left-panel-resizer"></div>
+
+<!-- 中区：自然语言对话式排版 -->
+<div class="ws-center" data-component="research-main">
+<div class="chat-flow" id="chat-flow">
+<div class="chat-container" id="chat-container" data-component="research-dialog">
+
+<!-- 恢复的内容：前三段对话 -->
+<div class="user-message" data-component="user-prompt" data-api-field="description">菲律宾仁爱礁强行运补事件推演</div>
+
+<div class="sys-message" data-component="configuration-assistant-message">
+<p style="margin-bottom: 16px; color: #000000; font-size: 14px;">你好！根据你提出的问题，关于菲律宾在仁爱礁强行运补的局势影响分析，我们可以从多个维度进行探讨。为了提供更加精准的推演配置，首先需要确认以下一些关键信息：</p>
+<div class="weak-form" data-component="simulation-configuration-summary">
+<div class="weak-row">
+<div class="weak-label">事件议题</div>
+<div class="weak-value-text" data-field="research.summary.topic" data-api-field="topic">仁爱礁冲突</div>
+</div>
+<div class="weak-row">
+<div class="weak-label">推演类型</div>
+<div class="weak-value-text" data-field="research.summary.type" data-api-field="simulation_type">一线实控类</div>
+</div>
+<div class="weak-row">
+<div class="weak-label">核心问题</div>
+<div class="weak-value-text" data-field="research.summary.core_question" data-api-field="core_question">强行运补引发的外交震荡对于菲方社会局势的影响</div>
+</div>
+<div class="weak-row">
+<div class="weak-label">时间范围</div>
+<div class="weak-value-text" data-field="research.summary.time_range" data-api-field="time_range">2022/01/01-2024/01/01</div>
+</div>
+<div class="weak-row">
+<div class="weak-label">推演轮次</div>
+<div class="weak-value-text" data-field="research.summary.rounds" data-api-field="rounds">5</div>
+</div>
+<div class="weak-row">
+<div class="weak-label">初始刺激事件</div>
+<div class="weak-value-text" data-field="research.summary.initial_event" data-api-field="initial_event">菲律宾两艘运补船在试图强行</div>
+</div>
+<div class="weak-row">
+<div class="weak-label">事件触发机制</div>
+<div class="weak-value-text" data-field="research.summary.trigger_mechanism" data-api-field="trigger_mechanism">美国海军“阿利·伯克”级</div>
+</div>
+</div>
+<p style="margin-bottom: 0; color: #000000; font-size: 14px;">这些信息能帮助我们精准预测运补行动可能带来的多方面影响，请问是否进入知识调研？</p>
+</div>
+
+<div class="user-message" data-component="user-confirmation" data-event="configuration.confirm.research">是</div>
+
+<!-- 完整的知识调研展示 -->
+<div class="sys-message" data-component="research-assistant-message">
+<p style="margin-bottom: 16px; font-size: 14px; color: #000000;">收到，我将收集菲律宾仁爱礁强行运补事件相关资讯和背景信息</p>
+
+<!-- 知识调研模块使用白色背景框 -->
+<div class="weak-form" data-component="research-findings">
+<div style="margin-bottom: 16px;">
+<div style="font-weight: bold; color: #000000; font-size: 14px; margin-bottom: 8px;">历史维度</div>
+<div class="weak-row" style="border-bottom: none; padding: 0;">
+<div class="weak-value-text" data-field="research.finding.history.marcos" data-api-field="research_finding">1999年马德雷山号非法坐滩事件</div>
+<svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="research.finding.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+</div>
+<div class="weak-row" style="border-bottom: none; padding: 0;">
+<div class="weak-value-text" data-field="research.finding.history.water_cannon" data-api-field="research_finding">2023年以来的高频水炮驱离事件记录</div>
+<svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="research.finding.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+</div>
+</div>
+<div>
+<div style="font-weight: bold; color: #000000; font-size: 14px; margin-bottom: 8px;">经济与社会维度</div>
+<div class="weak-row" style="border-bottom: none; padding: 0;">
+<div class="weak-value-text" data-field="research.finding.social.trade_dependency" data-api-field="research_finding">菲律宾对华出口贸易依赖度评估</div>
+<svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="research.finding.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+</div>
+<div class="weak-row" style="border-bottom: none; padding: 0;">
+<div class="weak-value-text" data-field="research.finding.social.inflation" data-api-field="research_finding">菲律宾国内通货膨胀对马科斯政府支持率的冲击</div>
+<svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="research.finding.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+</div>
+</div>
+</div>
+
+<p style="margin-bottom: 24px; color: #000000; font-size: 14px;">我已自动关联基础知识。请问是否进入推演页面？</p>
+<div style="display: flex; gap: 12px; align-items: center;">
+<button id="btn-yes" class="btn-outline" style="background: #FFFFFF; border: 1px solid #94A3B8; width: 88px; border-radius: 16px; color: #000000; font-weight: 500; box-shadow: 0 2px 6px rgba(0,0,0,0.05);" onclick="sendMessage('是')" data-event="research.confirm.workspace" data-route="/workspace">是 (20s)</button>
+<button class="btn-outline" style="background: #FFFFFF; border: 1px solid #94A3B8; width: 64px; border-radius: 16px; color: #000000; font-weight: 500; box-shadow: 0 2px 6px rgba(0,0,0,0.05);" onclick="sendMessage('否')" data-event="research.reject.workspace">否</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- 页面偏底部显示的 Toast 提示 -->
+<div id="toast-tip" class="toast-tip" data-component="navigation-toast" data-state="hidden">跳转推演页…</div>
+
+<!-- 底部自然语言对话输入框复用 config 页面 -->
+<div class="bottom-input-area" data-component="research-composer">
+<div class="nl-input-wrapper">
+<!-- 语音输入 Icon -->
+<button class="voice-btn" title="语音输入" data-event="research.voice.input">
+<svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+</button>
+<input type="text" id="nl-input" name="researchInstruction" placeholder="输入补充调研需求…" oninput="checkInput()" onkeypress="handleKeyPress(event)" data-field="research.instruction" data-api-field="instruction">
+<button class="send-btn" id="send-btn" title="发送指令" onclick="handleSend()" data-event="research.instruction.send">
+<svg class="icon icon-sm" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+</button>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

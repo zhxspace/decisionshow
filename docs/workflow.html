@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>工作流和方法总结</title>
+    <link rel="stylesheet" href="../assets/showcase.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="返回首页">
+        <span class="brand-mark">MA</span>
+        <span>MultiAgent Showcase</span>
+      </a>
+      <nav class="top-nav" aria-label="展示导航">
+        <a href="../index.html#demo">演示视频</a>
+        <a href="./工作流和方法总结.md">Markdown 原文</a>
+        <a href="../prototype/index.html">高保真原型</a>
+      </nav>
+    </header>
+
+    <main class="article-layout">
+      <article class="article">
+        <p class="eyebrow">Workflow & Methodology</p>
+        <h1>工作流和方法总结</h1>
+        <p class="lead">
+          在 MultiAgent 项目中，我采用的是一套以产品验证为前置、以阶段门禁为控制、以高保真原型为实现基线、以自动化测试和视觉验收为闭环的研发工作流。
+        </p>
+
+        <h2>核心工作流</h2>
+        <section class="method-block">
+          <h3>1. 需求澄清</h3>
+          <p>先完成头脑风暴、市场调研、竞品分析和 ROI 预估，再沉淀最终功能清单。该阶段重点回答为什么做、给谁做、做到什么边界。</p>
+        </section>
+        <section class="method-block">
+          <h3>2. 产品设计</h3>
+          <p>按用户流程图、系统流程图、概念原型、产品需求文档和高保真原型逐步收敛。核心原则是先确认语义，再确认结构，最后确认视觉。</p>
+        </section>
+        <section class="method-block">
+          <h3>3. 技术设计和实施计划</h3>
+          <p>把产品需求翻译为系统架构、接口设计、数据模型、Agent 推演生命周期、状态管理、分支管理、报告生成和测试策略。</p>
+        </section>
+        <section class="method-block">
+          <h3>4. 正式开发</h3>
+          <p>以高保真原型为唯一视觉基线，按页面顺序逐页等价迁移，并建立原型节点到 React 组件、数据字段和事件的映射。</p>
+        </section>
+        <section class="method-block">
+          <h3>5. 测试与验收</h3>
+          <p>测试验收独立成阶段，覆盖系统测试、回归测试、浏览器测试、性能、安全、部署和用户验收，并回到 ROI 假设中复核收益。</p>
+        </section>
+
+        <h2>核心方法论</h2>
+        <div class="principles">
+          <div>
+            <h3>阶段门禁</h3>
+            <p>每个阶段都有对应产物和确认口令，当前阶段未确认前不进入下一阶段。</p>
+          </div>
+          <div>
+            <h3>状态单一来源</h3>
+            <p>以 workflow-state.yaml 作为当前阶段和确认状态的唯一依据。</p>
+          </div>
+          <div>
+            <h3>变更影响管理</h3>
+            <p>通过 traceability.yaml 和同步脚本检查上游依据和下游影响。</p>
+          </div>
+          <div>
+            <h3>原型即基线</h3>
+            <p>高保真原型不是参考图，而是正式前端等价迁移的唯一基线。</p>
+          </div>
+          <div>
+            <h3>最小实现</h3>
+            <p>只做当前阶段、当前页面、当前需求真正需要的内容。</p>
+          </div>
+          <div>
+            <h3>证据驱动验收</h3>
+            <p>用测试、构建、截图、差异图和用户确认记录证明完成度。</p>
+          </div>
+        </div>
+
+        <h2>工作流流程图</h2>
+        <div class="flow-diagram" role="img" aria-label="MultiAgent 项目工作流流程图">
+          <div>需求澄清</div>
+          <span></span>
+          <div>产品设计</div>
+          <span></span>
+          <div>技术设计</div>
+          <span></span>
+          <div>正式开发</div>
+          <span></span>
+          <div>测试验收</div>
+          <span></span>
+          <div>交付闭环</div>
+        </div>
+
+        <h2>与工作流匹配的文件结构</h2>
+        <pre class="tree"><code>MultiAgent/
+├── docs/product/
+│   ├── workflow-state.yaml        当前阶段和确认状态
+│   ├── traceability.yaml          产物依赖关系
+│   ├── 00-需求澄清.md
+│   ├── 01-市场调研.md
+│   ├── 02-竞品分析.md
+│   ├── 03-ROI预估.md
+│   ├── 04-功能清单.md
+│   ├── 05-用户流程图.excalidraw
+│   ├── 06-系统流程图.excalidraw
+│   ├── 07-概念原型.html
+│   ├── 08-产品需求文档.md
+│   ├── 09-高保真原型/
+│   ├── 10-系统设计文档_v3.md
+│   └── 11-开发记录.md
+├── apps/web/                      正式前端和视觉验收截图
+├── apps/api/                      后端 API 和业务逻辑
+├── tests/                         产品治理和流程图检查测试
+├── scripts/                       同步、校验和开发脚本
+└── 成果展示/                       面试展示材料</code></pre>
+
+        <blockquote>
+          这套方法适合复杂 AI 产品和多 Agent 系统，因为它能够同时处理需求不确定、交互复杂、技术链路长、验收难度高这四类风险。
+        </blockquote>
+      </article>
+    </main>
+  </body>
+</html>

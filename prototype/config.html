@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>任务配置 - 参数确认 - Decision</title>
+<link rel="icon" href="data:," />
+  <script type="module" crossorigin src="../assets/config-BqGkd1It.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="../assets/config-DH0jK6OE.css">
+  <link rel="stylesheet" crossorigin href="../assets/components-r1HoO9zm.css">
+</head>
+<body data-page="config" data-prototype-page="config.html" data-react-route="/config" data-current-state="configuration">
+
+<!-- 左侧工具栏默认收起 -->
+<div class="global-toolbar" id="toolbar" data-component="app-sidebar" data-state="collapsed">
+  <div class="tb-header">
+    <a href="home.html" class="tb-logo-box" title="Decision 首页">
+      <svg class="icon icon-lg" style="color:var(--primary-black);" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 18C4.686 18 2 15.314 2 12c0-3.314 2.686-6 6-6 2.5 0 4.8 1.5 5.5 3.5" /><path d="M16 6c3.314 0 6 2.686 6 6 0 3.314-2.686 6-6 6-2.5 0-4.8-1.5-5.5-3.5" /></svg>
+      <span>Decision</span>
+    </a>
+    <button id="sidebar-toggle-btn" class="sidebar-toggle" onclick="toggleToolbar()" title="展开边栏" data-event="sidebar.toggle">
+      <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+    </button>
+  </div>
+  <div class="tb-nav">
+    <a href="home.html" class="tb-item" data-event="task.create.open" data-route="/home">
+      <svg class="icon" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      <span>新建任务</span>
+    </a>
+    <a href="knowledge.html" class="tb-item" data-event="knowledge.open" data-route="/knowledge">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+      <span>知识库</span>
+    </a>
+    <div class="tb-item collapsed-history-btn" onclick="toggleToolbar()" title="历史任务" data-event="history.open-sidebar">
+      <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+    </div>
+  </div>
+
+  <div class="history-section">
+    <div class="history-header">
+      <div style="display: flex; align-items: center; gap: 4px; cursor: pointer;" onclick="toggleHistoryList()" data-event="history.toggle">
+        <span>历史任务</span>
+        <svg id="history-arrow" class="icon icon-sm history-arrow-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      <svg class="icon icon-sm" style="cursor: pointer;" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    </div>
+    <div class="history-list" id="history-list-container">
+      <div class="hist-item" onclick="window.location.href='workspace.html'" data-event="history.open-workspace" data-route="/workspace">
+        <svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        菲律宾仁爱礁强行运补事件推演
+      </div>
+      <div class="hist-item">
+        <svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        关税后续问题推演评估及应对
+      </div>
+      <div class="hist-item">
+        <svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        中东原油市场短期走势预测分析
+      </div>
+      <div class="hist-item">
+        <svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        东海防空识别区常态化巡航评估
+      </div>
+      <div class="hist-item">
+        <svg class="icon icon-sm" style="color: #94A3B8;" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        半导体供应链制裁极限施压演进
+      </div>
+    </div>
+  </div>
+  
+  <!-- 底部用户信息区 -->
+  <div class="user-profile">
+    <div class="avatar">A</div>
+    <div class="user-name">admin</div>
+  </div>
+</div>
+
+<div class="wrapper" data-component="configuration-shell">
+  <div class="header">
+    <div><b>当前任务：</b>菲律宾仁爱礁强行运补事件推演</div>
+    <div>模式：标准模式</div>
+  </div>
+
+  <div class="ws-body" data-component="configuration-workspace">
+
+    <!-- 呼出左侧边栏的悬浮按钮 -->
+    <button class="expand-tab-left panel-btn" onclick="toggleLeftSidebar()" title="展开任务面板" data-event="configuration.sidebar.expand">
+      <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+    </button>
+    
+    <!-- 左侧面板（恢复流式布局，同 workspace） -->
+    <div class="ws-left" id="ws-left" data-component="task-progress-sidebar" data-state="expanded">
+      <!-- 模块一：任务导航 -->
+      <div class="panel-section" style="flex:1; overflow-y:auto; border-bottom: 1px solid #E2E8F0;">
+        <div class="panel-title">
+          <span class="panel-title-text"><svg class="icon" viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg> 任务导航</span>
+          <button class="panel-btn" onclick="toggleLeftSidebar()" title="收起面板" data-event="configuration.sidebar.collapse">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+          </button>
+        </div>
+        
+        <div class="tree-node active" style="font-weight: bold; color: var(--primary-blue); display: flex; align-items: center; gap: 6px;" data-state="active" data-step="template">
+          模板配置
+        </div>
+        <div class="tree-node disabled" style="display: flex; align-items: center; gap: 6px;" data-state="disabled" data-step="research">
+          知识调研
+        </div>
+        <div class="tree-node disabled" style="display: flex; align-items: center; gap: 6px;" data-state="disabled" data-step="simulation">
+          任务推演
+        </div>
+        <div class="tree-node disabled" style="display: flex; align-items: center; gap: 6px;" data-state="disabled" data-step="complete">
+          完成
+        </div>
+      </div>
+      <!-- 模块二：知识库模块 -->
+      <div class="panel-section" style="border-bottom: none; padding-bottom: 24px;">
+        <div class="panel-title">
+          <span class="panel-title-text"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg> 知识库</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px; margin-top: 8px;">
+          <div class="kb-item" style="color: #475569;" title="查看文档">
+            <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            <span style="font-size: 13px; color: #475569;">南海历史争端.pdf</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resizer" id="dragLeft" data-component="left-panel-resizer"></div>
+
+    <!-- 右侧：模板推荐悬浮 -->
+    <div class="ws-right" id="template-recommend-panel" data-component="template-recommendations" data-state="visible">
+      <div style="font-weight: bold; margin-bottom: 16px; color: #1E293B; font-size: 14px; display: flex; justify-content: space-between; align-items: center;">
+        <span>模板推荐</span>
+        <span class="close-btn" onclick="document.getElementById('template-recommend-panel').style.display='none'" title="关闭" data-event="template-recommendations.close">×</span>
+      </div>
+      
+      <div class="flow-card">
+        <button class="quote-btn" onclick="event.stopPropagation();" data-event="template.quote">引用</button>
+        <div style="font-weight: 500; font-size: 13px; color: #1E293B; margin-bottom: 6px;">南海岛礁多边博弈演进</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #64748B;">
+          <span>2025.10.30</span>
+          <span class="star-rating">★★★★★</span>
+        </div>
+      </div>
+      
+      <div class="flow-card">
+        <button class="quote-btn" onclick="event.stopPropagation();" data-event="template.quote">引用</button>
+        <div style="font-weight: 500; font-size: 13px; color: #1E293B; margin-bottom: 6px;">外部势力强行介入风险评估</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #64748B;">
+          <span>2025.09.15</span>
+          <span class="star-rating">★★★★☆</span>
+        </div>
+      </div>
+
+      <div class="flow-card">
+        <button class="quote-btn" onclick="event.stopPropagation();" data-event="template.quote">引用</button>
+        <div style="font-weight: 500; font-size: 13px; color: #1E293B; margin-bottom: 6px;">经贸反制与防务降温测试</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #64748B;">
+          <span>2025.08.21</span>
+          <span class="star-rating">★★★★★</span>
+        </div>
+      </div>
+
+      <div class="flow-card">
+        <button class="quote-btn" onclick="event.stopPropagation();" data-event="template.quote">引用</button>
+        <div style="font-weight: 500; font-size: 13px; color: #1E293B; margin-bottom: 6px;">一线海警实控对峙复盘</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #64748B;">
+          <span>2025.07.11</span>
+          <span class="star-rating">★★★★☆</span>
+        </div>
+      </div>
+
+      <div class="flow-card">
+        <button class="quote-btn" onclick="event.stopPropagation();" data-event="template.quote">引用</button>
+        <div style="font-weight: 500; font-size: 13px; color: #1E293B; margin-bottom: 6px;">外交声索与舆论战效能推演</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #64748B;">
+          <span>2025.06.05</span>
+          <span class="star-rating">★★★☆☆</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 中区：自然语言对话式排版 -->
+    <div class="ws-center" data-component="configuration-main">
+      <div class="chat-flow" id="chat-flow">
+        <div class="chat-container" id="chat-container" data-component="configuration-dialog">
+          <!-- 初始询问 -->
+          <div class="user-message" data-component="user-prompt" data-api-field="description">菲律宾仁爱礁强行运补事件推演</div>
+          
+          <!-- 系统返回表单 -->
+          <div class="sys-message" data-component="configuration-assistant-message">
+            <p style="margin-bottom: 16px; color: #000000; font-size: 14px;">你好！根据你提出的问题，关于菲律宾在仁爱礁强行运补的局势影响分析，我们可以从多个维度进行探讨。为了提供更加精准的推演配置，首先需要确认以下一些关键信息：</p>
+            
+            <div class="weak-form" data-component="simulation-configuration-form">
+              <div class="weak-row">
+                <div class="weak-label">事件议题</div>
+                <div class="weak-value-text" data-field="configuration.topic" data-api-field="topic">仁爱礁冲突</div>
+                <svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="configuration.field.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              </div>
+              <div class="weak-row">
+                <div class="weak-label">推演类型</div>
+                <div class="weak-value-text" data-field="configuration.type" data-api-field="simulation_type">一线实控类</div>
+                <svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="configuration.field.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              </div>
+              <div class="weak-row">
+                <div class="weak-label">核心问题</div>
+                <div class="weak-value-text" data-field="configuration.core_question" data-api-field="core_question">强行运补引发的外交震荡对于菲方社会局势的影响</div>
+                <svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="configuration.field.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              </div>
+              <div class="weak-row">
+                <div class="weak-label">时间范围</div>
+                <div class="weak-value-text" data-field="configuration.time_range" data-api-field="time_range">2022/01/01-2024/01/01</div>
+                <svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="configuration.field.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              </div>
+              <div class="weak-row">
+                <div class="weak-label">推演轮次</div>
+                <div class="weak-value-text" data-field="configuration.rounds" data-api-field="rounds">5</div>
+                <svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="configuration.field.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              </div>
+              <div class="weak-row">
+                <div class="weak-label">初始刺激事件</div>
+                <div class="weak-value-text" data-field="configuration.initial_event" data-api-field="initial_event">菲律宾两艘运补船在试图强行</div>
+                <svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="configuration.field.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              </div>
+              <div class="weak-row">
+                <div class="weak-label">事件触发机制</div>
+                <div class="weak-value-text" data-field="configuration.trigger_mechanism" data-api-field="trigger_mechanism">美国海军“阿利·伯克”级</div>
+                <svg class="icon icon-sm edit-icon" onclick="makeEditable(this)" data-event="configuration.field.edit" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+              </div>
+            </div>
+
+            <p style="margin-bottom: 24px; color: #000000; font-size: 14px;">这些信息能帮助我们精准预测运补行动可能带来的多方面影响，请问是否进入知识调研？</p>
+            
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <!-- “是/否” 按钮样式完全参考 research.docx -->
+              <button class="btn-outline" style="background: #FFFFFF; border: 1px solid #94A3B8; width: 64px; border-radius: 16px; color: #000000; font-weight: 500; box-shadow: 0 2px 6px rgba(0,0,0,0.05);" onclick="sendMessage('是')" data-event="configuration.confirm.research">是</button>
+              <button class="btn-outline" style="background: #FFFFFF; border: 1px solid #94A3B8; width: 64px; border-radius: 16px; color: #000000; font-weight: 500; box-shadow: 0 2px 6px rgba(0,0,0,0.05);" onclick="sendMessage('否')" data-event="configuration.reject.research">否</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 页面偏底部显示的 Toast 提示 -->
+      <div id="toast-tip" class="toast-tip" data-component="navigation-toast" data-state="hidden">跳转知识调研…</div>
+
+      <!-- 底部自然语言对话输入框 -->
+      <div class="bottom-input-area">
+        <div class="nl-input-wrapper">
+          <!-- 语音输入 Icon -->
+          <button class="voice-btn" title="语音输入" data-event="configuration.voice.input">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+          </button>
+          
+          <input type="text" id="nl-input" name="configurationInstruction" placeholder="输入是或者想要修改的内容" oninput="checkInput()" onkeypress="handleKeyPress(event)" data-field="configuration.instruction">
+          <!-- 默认按钮置灰、有内容被点亮的样式由 class 和 checkInput 处理 -->
+          <button class="send-btn" id="send-btn" title="发送指令" onclick="handleSend()" data-event="configuration.instruction.send">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
