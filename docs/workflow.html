@@ -9,13 +9,12 @@
   <body>
     <header class="site-header">
       <a class="brand" href="../index.html" aria-label="返回首页">
-        <span class="brand-mark">MA</span>
-        <span>MultiAgent Showcase</span>
+        <span class="brand-mark">D</span>
+        <span>Decision Showcase</span>
       </a>
       <nav class="top-nav" aria-label="展示导航">
         <a href="../index.html#demo">演示视频</a>
-        <a href="./工作流和方法总结.md">Markdown 原文</a>
-        <a href="../prototype/index.html">高保真原型</a>
+        <a href="../prototype/index.html">产品demo</a>
       </nav>
     </header>
 
@@ -24,8 +23,13 @@
         <p class="eyebrow">Workflow & Methodology</p>
         <h1>工作流和方法总结</h1>
         <p class="lead">
-          在 MultiAgent 项目中，我采用的是一套以产品验证为前置、以阶段门禁为控制、以高保真原型为实现基线、以自动化测试和视觉验收为闭环的研发工作流。
+          在 Decision 项目中，我采用的是一套以产品验证为前置、以阶段门禁为控制、以高保真原型为实现基线、以自动化测试和视觉验收为闭环的研发工作流。
         </p>
+
+        <h2>工作流流程图</h2>
+        <button class="flowchart-open" type="button" aria-label="打开工作流流程图大图">
+          <img class="flowchart-image" src="../assets/workflow-flowchart.svg" alt="Decision 项目核心工作流流程图" />
+        </button>
 
         <h2>核心工作流</h2>
         <section class="method-block">
@@ -77,48 +81,129 @@
           </div>
         </div>
 
-        <h2>工作流流程图</h2>
-        <div class="flow-diagram" role="img" aria-label="MultiAgent 项目工作流流程图">
-          <div>需求澄清</div>
-          <span></span>
-          <div>产品设计</div>
-          <span></span>
-          <div>技术设计</div>
-          <span></span>
-          <div>正式开发</div>
-          <span></span>
-          <div>测试验收</div>
-          <span></span>
-          <div>交付闭环</div>
-        </div>
-
         <h2>与工作流匹配的文件结构</h2>
         <pre class="tree"><code>MultiAgent/
-├── docs/product/
-│   ├── workflow-state.yaml        当前阶段和确认状态
-│   ├── traceability.yaml          产物依赖关系
-│   ├── 00-需求澄清.md
-│   ├── 01-市场调研.md
-│   ├── 02-竞品分析.md
-│   ├── 03-ROI预估.md
-│   ├── 04-功能清单.md
-│   ├── 05-用户流程图.excalidraw
-│   ├── 06-系统流程图.excalidraw
-│   ├── 07-概念原型.html
-│   ├── 08-产品需求文档.md
-│   ├── 09-高保真原型/
-│   ├── 10-系统设计文档_v3.md
-│   └── 11-开发记录.md
-├── apps/web/                      正式前端和视觉验收截图
-├── apps/api/                      后端 API 和业务逻辑
-├── tests/                         产品治理和流程图检查测试
-├── scripts/                       同步、校验和开发脚本
-└── 成果展示/                       面试展示材料</code></pre>
+├── AGENTS.md
+│   └── 项目级工作规则、阶段门禁、变更控制和编码约束
+├── docs/
+│   ├── product/
+│   │   ├── workflow-state.yaml
+│   │   │   └── 当前阶段、确认状态和下一阶段的唯一状态来源
+│   │   ├── traceability.yaml
+│   │   │   └── 产品产物之间的依赖关系映射
+│   │   ├── sync-status.yaml
+│   │   │   └── 变更扫描后的待同步状态
+│   │   ├── 变更记录.md
+│   │   │   └── 每次同步和确认后的变更记录
+│   │   ├── 一致性与变更追踪.md
+│   │   │   └── 产物一致性和影响管理说明
+│   │   ├── 00-需求澄清.md
+│   │   ├── 01-市场调研.md
+│   │   ├── 02-竞品分析.md
+│   │   ├── 03-ROI预估.md
+│   │   ├── 04-功能清单.md
+│   │   │   └── 阶段 1：需求澄清和功能范围
+│   │   ├── 05-用户流程图.excalidraw
+│   │   ├── 06-系统流程图.excalidraw
+│   │   ├── 07-概念原型.html
+│   │   ├── 08-产品需求文档.md
+│   │   ├── 09-高保真原型/
+│   │   │   ├── login.html
+│   │   │   ├── home.html
+│   │   │   ├── config.html
+│   │   │   ├── research.html
+│   │   │   ├── workspace.html
+│   │   │   ├── report.html
+│   │   │   ├── knowledge.html
+│   │   │   ├── src/
+│   │   │   ├── verification/
+│   │   │   ├── baseline-manifest.json
+│   │   │   └── updatelog.md
+│   │   │       └── 阶段 2：从流程、PRD 到高保真原型的正式设计产物
+│   │   ├── 10-系统设计文档_v3.md
+│   │   │   └── 阶段 3：技术架构、接口、数据模型和实施计划
+│   │   └── 11-开发记录.md
+│   │       └── 阶段 4：逐页开发、映射关系、测试结果和验收记录
+│   └── superpowers/
+│       └── plans/
+│           └── 实施计划和阶段性开发计划
+├── scripts/
+│   ├── product-sync.mjs
+│   ├── product-sync-state.mjs
+│   ├── excalidraw-user-flow.mjs
+│   └── install-product-sync-watcher.sh
+│       └── 产品同步、状态扫描、流程图检查和监听器脚本
+├── tests/
+│   ├── product-sync-state.test.mjs
+│   └── excalidraw-user-flow.test.mjs
+│       └── 产品治理脚本和流程图规范的自动化测试
+├── apps/
+│   ├── web/
+│   │   ├── src/
+│   │   └── verification/
+│   │       └── 正式前端代码、页面测试、原型截图、实现截图和差异图
+│   └── api/
+│       ├── app/
+│       └── tests/
+│           └── 后端 API、状态管理、推演逻辑和后端测试
+├── data/
+│   └── 运行数据和项目数据
+├── config/
+│   └── 项目配置
+└── 成果展示/
+    ├── demo录屏.mov
+    └── 工作流和方法总结.md
+        └── 展示材料，集中呈现工作流、方法论、流程图和文件结构</code></pre>
 
-        <blockquote>
-          这套方法适合复杂 AI 产品和多 Agent 系统，因为它能够同时处理需求不确定、交互复杂、技术链路长、验收难度高这四类风险。
-        </blockquote>
+        <p class="closing-note">
+          这套工作流适合复杂 AI 产品和多 Agent 系统，它能够解决需求不确定、交互复杂、技术链路长、验收难度高这四类风险问题。
+        </p>
       </article>
     </main>
+    <div class="flowchart-modal" hidden>
+      <div class="flowchart-modal-bar">
+        <button type="button" data-zoom-out>缩小</button>
+        <button type="button" data-zoom-in>放大</button>
+        <button type="button" data-close>关闭</button>
+      </div>
+      <div class="flowchart-modal-stage">
+        <img class="flowchart-modal-image" src="../assets/workflow-flowchart.svg" alt="Decision 项目核心工作流流程图大图" />
+      </div>
+    </div>
+    <script>
+      const modal = document.querySelector(".flowchart-modal");
+      const modalImage = document.querySelector(".flowchart-modal-image");
+      const modalStage = document.querySelector(".flowchart-modal-stage");
+      let flowchartScale = 1;
+
+      function setFlowchartScale(nextScale) {
+        flowchartScale = Math.min(2.2, Math.max(0.5, nextScale));
+        modalImage.style.transform = `scale(${flowchartScale})`;
+      }
+
+      document.querySelector(".flowchart-open").addEventListener("click", () => {
+        modal.hidden = false;
+        setFlowchartScale(1);
+        modalStage.scrollTo({ left: 0, top: 0 });
+      });
+
+      modal.querySelector("[data-close]").addEventListener("click", () => {
+        modal.hidden = true;
+      });
+
+      modal.querySelector("[data-zoom-in]").addEventListener("click", () => {
+        setFlowchartScale(flowchartScale + 0.25);
+      });
+
+      modal.querySelector("[data-zoom-out]").addEventListener("click", () => {
+        setFlowchartScale(flowchartScale - 0.25);
+      });
+
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.hidden = true;
+        }
+      });
+    </script>
   </body>
 </html>
